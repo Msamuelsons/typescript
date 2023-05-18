@@ -1,1 +1,1 @@
-const variaveisTipos = require('./fundamentos/arrays');
+const manipulandoArrays = require('./POO/app');
