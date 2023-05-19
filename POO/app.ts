@@ -1,19 +1,14 @@
-class User {
-    name: string;
-    age: number;
+// Dio Banking
 
-    constructor(name:string, age:number) {
-        this.name = name;
-        this.age = age;
-    }
-    showName() {
-        console.log(this.name);
-    }
-}
+// nome, account number
+// Depositar, Sacar
 
-const user = new User('Marcos', 22);
 
-user.showName();
+import { PeopleAccount } from './class/PeopleAccount';
+import { CompanyAccount } from './class/CompanyAccount';
 
-const otherUser = new User('Samuel', 30);
-otherUser.showName();
+const peopleAccount = new PeopleAccount(1, 'Anakin Skywalker', 1);
+peopleAccount.deposit();
+
+const companyAccount: CompanyAccount = new CompanyAccount('Obiwan Kenobi', 10);
+companyAccount.deposit();
